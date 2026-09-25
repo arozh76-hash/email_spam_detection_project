@@ -1,0 +1,8 @@
+services:
+  spam-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_DIR: /app/models/spam-bert
+      SPAM_THRESHOLD: "0.5"
